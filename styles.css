@@ -1,0 +1,218 @@
+/* Dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #f4f4f4;
+}
+
+/* Game Card Styling */
+.game-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Tier List Styling */
+.tier-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tier-row {
+    display: flex;
+    align-items: center;
+}
+
+.tier-label {
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    color: #f4f4f4;
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.tier-games {
+    display: flex;
+    gap: 15px;
+}
+
+.tier-games .game-card {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.tier-games .game-img {
+    width: 100px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+
+.game-card {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-card h2 {
+    margin-top: 0;
+    color: #f4f4f4;
+}
+
+/* Game Image */
+.game-img {
+    width: 150px;
+    height: 200px;
+    /* object-fit: cover; */
+    border-radius: 8px;
+}
+/* About Me Section */
+#about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#about-section h1 {
+    color: #f4f4f4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ddd;
+}
+
+.about-content ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+/* Footer Styling */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: #ddd;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socials li {
+    display: inline;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Inverts the color for dark theme */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Game Info */
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-card button {
+    margin-top: 10px;
+    background-color: #555;
+    color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.game-card button:hover {
+    background-color: #777;
+}
+
+/* Hidden sections */
+#tierlist-section, #about-section {
+    display: flex;
+}
